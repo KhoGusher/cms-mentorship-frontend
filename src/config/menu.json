@@ -1,0 +1,42 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Services",
+      "url": "/services"
+    },
+    {
+      "name": "Clients",
+      "url": "/clients"
+    },
+    {
+      "name": "Projects",
+      "url": "/projects"
+    },
+   
+    {
+      "name": "Contact-us",
+      "url": "/contact"
+    },
+    {
+      "name": "About",
+      "url": "/about"
+    }
+  ],
+
+  "footer": [
+    {
+      "name": "GusherLabs",
+      "url": "/contact"
+    },
+    {
+      "name": "Change your World!",
+      "url": "/contact"
+    }
+    
+  ]
+  
+}

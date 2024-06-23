@@ -1,0 +1,261 @@
+.row1 {
+  width: 100vw;
+  overflow: hidden;
+  height: 75vh;
+  background: rgb(2, 0, 36);
+  /* background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 85, 121, 1) 53%,
+    rgba(0, 212, 255, 1) 100%
+  ), */
+  background:url('../../public/images/bg9.jpg'); /* Replace 'path_to_your_image.jpg' with the actual path to your image file. */
+
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  z-index: -1;
+  position: relative;
+}
+
+.homeContainer {
+    font-family: serif;
+    margin: auto 0;
+    overflow: hidden;  
+  }
+  
+  .headerBox {
+    overflow: hidden;
+    margin-left: 5px;
+    
+  }
+
+  .servicesButton2 { 
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 5px; 
+    clip-path: polygon(50% 5%, 61% 40%, 98% 40%, 68% 62%, 79% 96%, 50% 75%, 21% 96%, 32% 62%, 2% 40%, 39% 40%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 60%); */
+  
+  }
+  
+  .headerBox .servicesButton { 
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: myfirst 20s infinite;
+    animation-direction:alternate-reverse;
+    border-radius: 5px; 
+    clip-path: polygon(50% 5%, 61% 40%, 98% 40%, 68% 62%, 79% 96%, 50% 75%, 21% 96%, 32% 62%, 2% 40%, 39% 40%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 60%); */
+  
+  }
+  .headerBox .servicesButtont { 
+    width: 50px;
+    height: 50px;
+    background: rgb(199,138,34);
+    position: relative;
+    animation: myfirst 20s infinite;
+    animation-direction:alternate-reverse;
+    border-radius: 5px; 
+    margin-left: 10px;
+    clip-path: polygon(50% 5%, 61% 40%, 98% 40%, 68% 62%, 79% 96%, 50% 75%, 21% 96%, 32% 62%, 2% 40%, 39% 40%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 60%); */
+  
+  }
+  @keyframes myfirst {
+    0%   {background: linear-gradient(90deg, #C78A22 0%, #000851 100%); left: 0px; top: 0px;}
+    25%  {background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%); left: 200px; top: 0px;}
+    50%  {background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);}
+    75%  {background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);; right: 0px; top: 200px;}
+    100% {background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%); left: 0px; top: 0px;}
+  }
+  
+  
+  .headerBox {
+    width: 100w;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70vw;
+  }
+  .headingPrimary {
+    color: #fff;
+    /* text-transform: uppercase; */
+  }
+  .heaidngPrimaryMain {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    line-height: 8vh;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+  }
+  .heaidngPrimarySub {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.7rem;
+    margin-bottom: 2rem;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  @keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(10rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  .servicesButton:link,
+  .servicesButton:visited {
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    background-color: #fff;
+    font-size: 1.4rem;
+    color: gray;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 50rem;
+    transition: all 0.2s;
+    position: relative;
+    animation-name: moveInUp;
+    animation-duration: 2s;
+  }
+  @keyframes moveInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(10rem);
+    }
+    80% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  .servicesButton:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+  .servicesButton:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+
+  .servicesButton:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+  .row2 {
+    margin-top: 3.2rem;
+    text-align: center;
+  }
+  .whatweoffer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+    column-gap: 4.8rem;
+    padding: 3.2rem;
+    font-size: 1.6rem;
+  }
+  .subtitle {
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+  .subtitle1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.0rem;
+    margin-bottom: solid 1px rgb(40, 180, 131);
+  }
+  .whatweoffer div p {
+    font-size: 1.8rem;
+    padding: 0 1.6rem 0 1.6rem;
+    margin-bottom: solid 1px rgba(40, 180, 131, 0.8);
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .row3 {
+    margin-top: 3.2rem;
+  }
+  .row3Title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
+  
+  .ourActions {
+    margin-top: 4rem;
+    padding-bottom: 10vh;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 35vw));
+    margin-left: 5vw;
+    margin-right: 5vw;
+    row-gap: 1.6rem;
+    align-items: center;
+    justify-items: center;
+    border-radius: 10px;
+  
+  }
+  .actionDesc {
+    width: 24vw;
+  }
+  @media screen and (max-width: 1000px) {
+    .whatweoffer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .ourActions {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .whatweoffer {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .ourActions {
+      grid-template-columns: repeat(1, 1fr);
+      
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .headerBox {
+      top: 50%;
+      transform: translate(-40% -40%);
+    }
+    
+    .heaidngPrimaryMain {
+      font-size: 2rem;
+      letter-spacing: 0.6rem;
+    }
+    .heaidngPrimarySub {
+      font-size: 1.6rem;
+    }
+  }
+  @media screen and (max-width: 440px) {
+    .row1 {
+      clip-path: none;
+    }
+    .headerBox {
+      top: 60%;
+    }
+  }
+  
