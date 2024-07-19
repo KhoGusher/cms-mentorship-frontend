@@ -40,24 +40,24 @@ const About = () => {
       <section className="section-sm">
         <div className="container">
           <div className="row justify-center">
-          <h2 className="text-3xl font-semibold text-center mb-8">About Gusherlabs</h2>
+            <h2 className="text-3xl font-semibold text-center mb-8">About Gusherlabs</h2>
             <p className="mb-5">
-          Gusherlabs is a registered technology company that places a significant 
-          emphasis on achieving local tech excellence, empowering through education while simultaneously striving 
-          to build global connections. Our dedication lies in fostering innovation 
-          within our local tech community, with the ultimate goal of positioning 
-           countries as a formidable global competitor in the tech industry.
+              Gusherlabs is a registered technology company that places a significant
+              emphasis on achieving local tech excellence, empowering through education while simultaneously striving
+              to build global connections. Our dedication lies in fostering innovation
+              within our local tech community, with the ultimate goal of positioning
+              countries as a formidable global competitor in the tech industry.
 
-          </p>
-          <p className="mb-8"> By reshaping 
-  perceptions, we bring forth advanced solutions and collaborations 
-  that give our clients every reason to opt for our local expertise on a global scale. 
-  Our motto, &ldquo;Limitless Excellence!&rdquo; truly embodies our unwavering commitment to 
-  pushing the boundaries of technological innovation.
-</p>
+            </p>
+            <p className="mb-8"> By reshaping
+              perceptions, we bring forth advanced solutions and collaborations
+              that give our clients every reason to opt for our local expertise on a global scale.
+              Our motto, &ldquo;Limitless Excellence!&rdquo; truly embodies our unwavering commitment to
+              pushing the boundaries of technological innovation.
+            </p>
 
 
-          <h2 className="text-3xl font-semibold text-center mb-8">Our Team</h2>
+            <h2 className="text-3xl font-semibold text-center mb-8">Our Team</h2>
             {people?.map((person: any, index: any) => (
               <div key={index} className="text-center md:col-10 lg:col-7">
                 {person.image && (
